@@ -1,19 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testicek</title>
+  <meta charset="UTF-8">
+  <title>Moje profily na sociálních sítích</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      line-height: 1.6;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+    }
+    .profile {
+      background: #fff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .counter {
+      font-size: 14px;
+      color: #7f8c8d;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Vítej na mém webu!</h1>
+  <h1>Moje profily na sociálních sítích</h1>
+  
+  <div class="profile">
+    <h2>Instagram</h2>
+    <a href="https://instagram.com/mojmir____" target="_blank">@mojmir____</a>
+  </div>
 
-    <p>Toto je můj první web vytvořený úplně sám. 🎉</p>
+  <div class="profile">
+    <h2>TikTok</h2>
+    <a href="https://tiktok.com/@jirka055" target="_blank">@jirka055</a>
+  </div>
 
-    <img src="https://placekitten.com/400/300" alt="Roztomilá kočka">
+  <div class="profile">
+    <h2>Discord</h2>
+    <a href="https://discord.gg/wG84xGkG" target="_blank">@jiricek1233</a>
+  </div>
 
-    <p>Více obrázků najdeš na <a href="https://placekitten.com" target="_blank">placekitten.com</a></p>
-</body>
+  <div class="counter" id="visitCounter">
+    Počet návštěvníků: <span id="count">0</span>
+  </div>
 
+  <script>
+    // Počítadlo návštěv (uloží do localStorage)
+    let count = localStorage.getItem('pageVisits') || 0;
+    count++;
+    localStorage.setItem('pageVisits', count);
+    document.getElementById('count').textContent = count;
+  </script>
 </body>
 </html>
