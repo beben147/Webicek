@@ -4,40 +4,91 @@
   <meta charset="UTF-8">
   <title>Moje profily na sociálních sítích</title>
   <style>
+    :root {
+      --primary: #3a7bd5;
+      --secondary: #00d2ff;
+      --light: #f8f9fa;
+      --dark: #343a40;
+      --text: #495057;
+      --white: #ffffff;
+      --shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
     body {
-      font-family: Arial, sans-serif;
-      max-width: 600px;
-      margin: 40px auto;
-      line-height: 1.6;
-      background: #f9f9f9;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 650px;
+      margin: 50px auto;
+      padding: 30px;
+      background: linear-gradient(to bottom right, var(--light), #e6f7ff);
+      color: var(--text);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
     }
     h1 {
-      color: #2c3e50;
+      color: var(--primary);
       text-align: center;
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 2.2em;
     }
     .profile {
-      background: #fff;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 5px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      background: var(--white);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      border-left: 5px solid var(--primary);
+      border: 2px solid var(--primary);
+    }
+    h2 {
+      color: var(--primary);
+      margin-top: 0;
+      font-size: 1.5em;
     }
     a {
-      color: #3498db;
+      color: var(--secondary);
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: color 0.2s;
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 12px;
+      background: var(--light);
+      border: 2px solid var(--primary);
+      border-radius: 6px;
     }
     a:hover {
-      text-decoration: underline;
+      color: var(--primary);
+      background: #e6f7ff;
+      text-decoration: none;
     }
     .counter {
-      font-size: 14px;
-      color: #7f8c8d;
+      background: var(--white);
+      padding: 15px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
       text-align: center;
-      margin-top: 20px;
+      font-size: 1.1em;
+      color: var(--dark);
+      border: 2px solid var(--primary);
+    }
+    .counter span {
+      font-weight: bold;
+      color: var(--primary);
+    }
+    .note {
+      font-size: 0.9em;
+      color: #6c757d;
+      margin-top: 10px;
+    }
+    .discord-name {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 12px;
+      background: var(--light);
+      border: 2px solid var(--primary);
+      border-radius: 6px;
+      font-weight: 600;
     }
   </style>
 </head>
